@@ -2,7 +2,7 @@ name: Plumber
 
 on:
   push:
-    branches: [main]
+    branches: [main, tmp-ci-run]
   pull_request:
 
 permissions:
