@@ -16,13 +16,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Socket Firewall
-        uses: workos/setup-socket-firewall@ca93dd8aa351f54f4729fe3377a9be23c631c25d
-        with:
-          token: ${{ secrets.PUBLIC_SOCKET_FIREWALL_TOKEN }}
-          allow-external-fork-fallback: true
-          configure-bun: true
-
       - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
         with:
           bun-version-file: package.json
